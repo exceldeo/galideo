@@ -14,7 +14,7 @@ function Layanan() {
         blanditiis, reiciendis eaque veritatis fugit. Reiciendis nihil amet
         eaque quasi? Et.
       </div>
-      <div className="flex space-x-[30px] mt-[50px]">
+      <div className="flex space-x-[30px] mt-[50px] flex-col sm:flex-row">
         {[...Array(4)].map((_, i) => {
           return (
             <LayananCard

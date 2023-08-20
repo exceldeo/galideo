@@ -1,8 +1,4 @@
-import FrameworkCard from "@/components/Cards/FrameworkCard";
-import Parallax from "@/components/Helper/Paralax";
-import { ParallaxCard } from "@/components/Helper/ParallaxCard";
-import { randomUUID } from "crypto";
-import { space } from "postcss/lib/list";
+import { ParallaxCardTools } from "@/components/Helper/Parallax/ParallaxCardTools";
 import React from "react";
 
 const framework = [
@@ -44,8 +40,9 @@ function ToolsFramework() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col space-y-5  w-[807px] ">
-          <ParallaxCard data={framework} baseVelocity={10} />
+        <div className="flex flex-col space-y-5  max-w-[807px] ">
+          <ParallaxCardTools data={framework} baseVelocity={10} />
+          <ParallaxCardTools data={framework} baseVelocity={-10} />
         </div>
       </div>
     </section>

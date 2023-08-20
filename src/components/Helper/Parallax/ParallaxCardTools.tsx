@@ -8,7 +8,7 @@ import {
   useVelocity,
   useAnimationFrame,
 } from "framer-motion";
-import FrameworkCard from "../Cards/FrameworkCard";
+import FrameworkCard from "../../Cards/FrameworkCard";
 
 const wrap = (min: number, max: number, v: number) => {
   const rangeSize = max - min;
@@ -20,7 +20,7 @@ interface ParallaxProps {
   baseVelocity?: number;
 }
 
-export function ParallaxCard({ data, baseVelocity = 100 }: ParallaxProps) {
+export function ParallaxCardTools({ data, baseVelocity = 100 }: ParallaxProps) {
   const baseX = useMotionValue(0);
   const { scrollY } = useScroll();
   const scrollVelocity = useVelocity(scrollY);
