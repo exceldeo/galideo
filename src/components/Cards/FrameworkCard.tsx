@@ -18,8 +18,8 @@ function FrameworkCard({ logo, title, description }: FrameworkCardProps) {
         className="pr-[20px]"
       />
       <div className="flex flex-col">
-        <div className="text-primary">{title}</div>
-        <div className="text-headline mt-[20px]">{description}</div>
+        <div className="text-primary text-2xl">{title}</div>
+        <div className="text-headline mt-[10px] text-sm">{description}</div>
       </div>
     </div>
   );

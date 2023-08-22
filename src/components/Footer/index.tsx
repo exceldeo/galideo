@@ -26,16 +26,15 @@ function Footer() {
       <div className="flex space-x-20">
         <div className="flex flex-col space-y-1">
           <span className="du-footer-title text-black">Web Design</span>
-          <a className="du-link du-link-hover">About us</a>
-          <a className="du-link du-link-hover">Contact</a>
-          <a className="du-link du-link-hover">Jobs</a>
-          <a className="du-link du-link-hover">Press kit</a>
+          <a className="du-link du-link-hover">User Interface Designer</a>
+          <a className="du-link du-link-hover">User Experience Designer</a>
+          <a className="du-link du-link-hover">User Experience Researcher</a>
+          <a className="du-link du-link-hover">User Experience Writer</a>
         </div>
         <div className="flex flex-col space-y-1">
           <span className="du-footer-title text-black">Web & Mobile Dev</span>
-          <a className="du-link du-link-hover">Terms of use</a>
-          <a className="du-link du-link-hover">Privacy policy</a>
-          <a className="du-link du-link-hover">Cookie policy</a>
+          <a className="du-link du-link-hover">Frontend Dev</a>
+          <a className="du-link du-link-hover">Backend Dev</a>
         </div>
       </div>
     </footer>

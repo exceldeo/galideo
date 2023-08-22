@@ -9,14 +9,10 @@ import QnA from "@/sections/home/qna";
 import Footer from "@/components/Footer";
 import Customer from "@/sections/home/customer";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export default function Home() {
   return (
     <>
-      <main
-        className={` ${inter.className} bg-backgroundPrimary px-[80px] pb-[100px]`}
-      >
+      <main className={` bg-backgroundPrimary px-[80px] pb-[100px]`}>
         <div className="space-y-[120px] pt-[120px]">
           <Hero />
           <Layanan />

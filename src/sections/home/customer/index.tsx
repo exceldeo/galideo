@@ -11,11 +11,13 @@ function Customer() {
         </div>
         <div className="flex flex-col space-y-[50px] justify-center pr-[50px]">
           <div className="space-y-2">
-            <div className="text-primary font-normal">Daftar Pelanggan</div>
-            <div className="text-2xl text-headline font-semibold">
+            <div className="text-primary font-normal text-lg">
+              Daftar Pelanggan
+            </div>
+            <div className="text-3xl text-headline font-medium">
               Pelanggan Setia Kami
             </div>
-            <p className="line-clamp-3">
+            <p className="line-clamp-3 font-light">
               Sudah Membuktikan Layanan Yang Di Berikan Dan Puas Dengan Kinerja
               Kami
             </p>

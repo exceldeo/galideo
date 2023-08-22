@@ -34,10 +34,10 @@ function Testimoni() {
       <div className="flex w-full justify-between flex-col sm:flex-row ">
         <div className="flex flex-col space-y-[50px] justify-center pr-[50px]">
           <div className="space-y-2">
-            <div className="text-primary font-normal">
+            <div className="text-primary font-normal text-lg">
               Dari Pelanggan Terkati
             </div>
-            <div className="text-2xl text-headline font-semibold">
+            <div className="text-3xl text-headline font-medium">
               Testimoni Layanan Kami
             </div>
           </div>

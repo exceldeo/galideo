@@ -7,22 +7,20 @@ function Hero() {
     <section id="home" className=" w-full ">
       <div className="flex w-full justify-between flex-col md:flex-row   bg-background rounded-3xl">
         <div className="flex flex-col space-y-[50px] w-1/2 px-16 justify-center ">
-          <div className="text-5xl text-headline">
-            Upadate Skill dan Kembangkan
+          <div className="text-5xl font-[500] text-headline">
+            Naikkan Level Ke Transformasi Digital
           </div>
-          <div>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Praesentium non illo quibusdam, nostrum unde amet aliquid magnam
-            maxime, tempora fugit accusamus rem, asperiores labore fuga qui.
-            Cumque laborum vero saepe?
+          <div className="font-normal">
+            Mari kembangkan skill digital bersama kelas kami dan membangun
+            bisnis bertransformasi digital
           </div>
           <div className="space-x-2">
             <Button buttonType="primary" size="sm">
               <div className="font-light"> Porfolio</div>
             </Button>
-            <Button buttonType="primary" outlined={true} size="sm">
+            {/* <Button buttonType="primary" outlined={true} size="sm">
               <div className="font-light"> Bootcamp</div>
-            </Button>
+            </Button> */}
           </div>
         </div>
         <div className="flex ">

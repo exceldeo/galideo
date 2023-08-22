@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@font/nunito": "^1.0.3",
     "@motionone/utils": "^10.15.1",
     "@types/node": "20.5.1",
     "@types/react": "18.2.20",

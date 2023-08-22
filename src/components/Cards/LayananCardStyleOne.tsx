@@ -4,32 +4,47 @@ import React from "react";
 interface LayananCardStyleOneProps {
   title: string;
   description: string;
+  category: string;
   img: string;
   price: string;
+  isBest: boolean;
 }
 
 function LayananCardStyleOne(
-  { title, description, img, price }: LayananCardStyleOneProps,
+  {
+    title,
+    category,
+    description,
+    img,
+    price,
+    isBest,
+  }: LayananCardStyleOneProps,
   props: any
 ) {
   return (
-    <div className="du-card w-[297.5px] bg-base-100 shadow-xl rounded-2xl p-[30px]">
+    <div className="du-card w-[400px] bg-base-100 shadow-xl rounded-2xl p-[30px]">
       <figure>
         <Image
-          src="/images/hero.png"
+          src={img}
           alt="Shoes"
           width={410}
           height={273}
           className="rounded-2xl"
         />
       </figure>
-      <div className="mt-[30px]">
-        <h2 className="du-card-title">{title}</h2>
-        <p className="line-clamp-2">{description}</p>
+      <div className="mt-[40px]">
+        <div className="du-card-title text-2xl font-semibold">
+          {title}
+          {isBest && (
+            <span className="text-primary text-sm"> Pilihan terbaik</span>
+          )}
+        </div>
+        <p className="mt-[20px] font-normal">{category}</p>
+        <p className="line-clamp-2 mt-[20px] font-light">{description}</p>
       </div>
-      <div className="mt-[20px] flex flex-col">
+      <div className="mt-[20px] flex flex-col font-light">
         Mulai dari
-        <span className="text-lg"> {price}</span>
+        <span className="text-xl font-normal"> {price}</span>
       </div>
     </div>
   );
