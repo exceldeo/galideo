@@ -1,9 +1,9 @@
-import LayananCard from "@/components/Cards/LayananCard";
+import LayananCard from "@/components/Cards/LayananCardStyleOne";
 import React from "react";
 
 function Layanan() {
   return (
-    <section id="layanan" className="pt-[80px] flex flex-col items-center">
+    <section id="layanan" className="flex flex-col items-center">
       <div className="text-5xl">
         Layanan
         <span className="text-primary"> Kami</span>

@@ -22,8 +22,8 @@ interface ParallaxProps {
 
 export function ParallaxCardTools({ data, baseVelocity = 100 }: ParallaxProps) {
   const baseX = useMotionValue(0);
-  const { scrollY } = useScroll();
-  const scrollVelocity = useVelocity(scrollY);
+  const { scrollX } = useScroll();
+  const scrollVelocity = useVelocity(scrollX);
   const smoothVelocity = useSpring(scrollVelocity, {
     damping: 50,
     stiffness: 300,
@@ -43,7 +43,6 @@ export function ParallaxCardTools({ data, baseVelocity = 100 }: ParallaxProps) {
     }
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
     baseX.set(baseX.get() + moveBy);
-    console.log(baseX.get(), x);
   });
 
   return (

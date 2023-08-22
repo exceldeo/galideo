@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import {
   motion,
   useScroll,
@@ -26,8 +26,9 @@ export function ParallaxCardTestimoni({
   baseVelocity = 100,
 }: ParallaxProps) {
   const baseX = useMotionValue(0);
-  const { scrollY } = useScroll();
-  const scrollVelocity = useVelocity(scrollY);
+  const { scrollX } = useScroll();
+  const scrollVelocity = useVelocity(scrollX);
+
   const smoothVelocity = useSpring(scrollVelocity, {
     damping: 50,
     stiffness: 300,
@@ -47,7 +48,6 @@ export function ParallaxCardTestimoni({
     }
     moveBy += directionFactor.current * moveBy * velocityFactor.get();
     baseX.set(baseX.get() + moveBy);
-    console.log(baseX.get(), x);
   });
 
   return (

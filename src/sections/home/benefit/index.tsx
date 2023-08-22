@@ -4,7 +4,7 @@ import { AiFillCheckCircle } from "react-icons/ai";
 
 function Benefit() {
   return (
-    <section id="benefit" className="pt-[80px] w-full">
+    <section id="benefit" className=" w-full">
       <div className="flex w-full justify-between flex-col md:flex-row ">
         <div className="flex flex-col space-y-[50px] w-2/3 justify-center pr-[50px]">
           <div>

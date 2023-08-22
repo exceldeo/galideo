@@ -1,15 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
-interface LayananCardProps {
+interface LayananCardStyleOneProps {
   title: string;
   description: string;
   img: string;
   price: string;
 }
 
-function LayananCard(
-  { title, description, img, price }: LayananCardProps,
+function LayananCardStyleOne(
+  { title, description, img, price }: LayananCardStyleOneProps,
   props: any
 ) {
   return (
@@ -35,4 +35,4 @@ function LayananCard(
   );
 }
 
-export default LayananCard;
+export default LayananCardStyleOne;

@@ -17,6 +17,7 @@ const config: Config = {
       },
       colors: {
         background: "#fffffe",
+        backgroundPrimary: "#F2ECFF",
         headline: "#2b2c34",
         paragraph: "#2b2c34",
         button: "#6246ea",

@@ -3,7 +3,7 @@ import React from "react";
 
 function QnA() {
   return (
-    <section id="qna" className="pt-[120px] w-full">
+    <section id="qna" className=" w-full">
       <div className="flex w-full justify-center flex-col items-center">
         <div className="text-3xl text-headline font-semibold">
           Pertanyaan yang sering ditanyakan

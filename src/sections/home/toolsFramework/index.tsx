@@ -24,7 +24,7 @@ const framework = [
 
 function ToolsFramework() {
   return (
-    <section id="tools" className="pt-[80px] w-full">
+    <section id="tools" className="w-full">
       <div className="flex w-full justify-between flex-col md:flex-row ">
         <div className="flex flex-col space-y-[50px] justify-center pr-[50px]">
           <div className="space-y-2">

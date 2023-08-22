@@ -4,7 +4,7 @@ import Button from "../Buttons";
 
 function Navbar() {
   return (
-    <div className="bg-gray-50 ">
+    <div className="bg-backgroundPrimary">
       <div className="du-navbar px-[80px] mx-auto">
         <div className="du-navbar-start">
           <a className="du-btn du-btn-ghost text-xl uppercase text-primary">

@@ -30,7 +30,7 @@ const testimoni = [
 
 function Testimoni() {
   return (
-    <section id="testimoni" className="pt-[80px] w-full">
+    <section id="testimoni" className=" w-full">
       <div className="flex w-full justify-between flex-col sm:flex-row ">
         <div className="flex flex-col space-y-[50px] justify-center pr-[50px]">
           <div className="space-y-2">
