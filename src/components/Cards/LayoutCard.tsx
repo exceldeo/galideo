@@ -3,11 +3,12 @@ import React from "react";
 
 interface LayoutCardProps {
   children: React.ReactNode;
+  className?: string;
 }
 
-function LayoutCard({ children }: LayoutCardProps, props: any) {
+function LayoutCard({ children, className }: LayoutCardProps, props: any) {
   return (
-    <div className={cx("shadow-neomorphism rounded-[80px] bg-backgroundCard")}>
+    <div className={cx("shadow-neomorphism  bg-backgroundCard", className)}>
       {children}
     </div>
   );

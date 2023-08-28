@@ -5,24 +5,19 @@ import ListLogoCard from "./ListLogoCard";
 function Customer() {
   return (
     <section id="customer" className="pt-[80px] w-full">
-      <div className="flex w-full justify-between flex-col sm:flex-row ">
-        <div className="flex flex-col space-y-5 max-w-[1000px] ">
-          <ListLogoCard />
+      <div className="flex flex-col space-y-[30px] items-center ">
+        <div className="text-5xl font-semibold ">
+          Daftar
+          <span className="text-primary"> Pelanggan Setia</span>
+          Kami
         </div>
-        <div className="flex flex-col space-y-[50px] justify-center pr-[50px]">
-          <div className="space-y-2">
-            <div className="text-primary font-normal text-lg">
-              Daftar Pelanggan
-            </div>
-            <div className="text-3xl text-headline font-medium">
-              Pelanggan Setia Kami
-            </div>
-            <p className="line-clamp-3 font-light">
-              Sudah Membuktikan Layanan Yang Di Berikan Dan Puas Dengan Kinerja
-              Kami
-            </p>
-          </div>
+        <div className="mt-[20px] font-thin">
+          Tersedia layanan dibawah ini untuk transformasi digital anda dan
+          bisnis anda
         </div>
+      </div>
+      <div className="mt-[60px]">
+        <ListLogoCard />
       </div>
     </section>
   );

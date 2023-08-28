@@ -1,32 +1,25 @@
 import Image from "next/image";
 import React from "react";
+import LayoutCard from "./LayoutCard";
 
 interface FokusLayananCardProps {
   title: string;
   description: string;
-  img: string;
+  index: string;
 }
 
 function FokusLayananCard(
-  { title, description, img }: FokusLayananCardProps,
+  { title, description, index }: FokusLayananCardProps,
   props: any
 ) {
   return (
-    <div className="du-card w-[297.5px] bg-base-100 shadow-xl rounded-2xl p-[30px]">
-      <figure>
-        <Image
-          src="/images/hero.png"
-          alt="Shoes"
-          width={410}
-          height={273}
-          className="rounded-2xl"
-        />
-      </figure>
-      <div className="mt-[40px]">
-        <h2 className="du-card-title text-xl font-normal">{title}</h2>
-        <p className="line-clamp-4 font-light mt-[30px]">{description}</p>
-      </div>
-    </div>
+    <LayoutCard className="rounded-[30px] w-[615px] p-[50px] space-y-5">
+      <LayoutCard className="rounded-full p-[10px] w-[40px]">
+        <div className="flex justify-center font-semibold">{index}</div>
+      </LayoutCard>
+      <h2 className="text-gray-600 text-3xl font-bold">{title}</h2>
+      <p className="line-clamp-4 font-light mt-[30px]">{description}</p>
+    </LayoutCard>
   );
 }
 

@@ -31,18 +31,18 @@ const testimoni = [
 function Testimoni() {
   return (
     <section id="testimoni" className=" w-full">
-      <div className="flex w-full justify-between flex-col sm:flex-row ">
-        <div className="flex flex-col space-y-[50px] justify-center pr-[50px]">
-          <div className="space-y-2">
-            <div className="text-primary font-normal text-lg">
-              Dari Pelanggan Terkati
-            </div>
-            <div className="text-3xl text-headline font-medium">
-              Testimoni Layanan Kami
-            </div>
+      <div className="flex w-full flex-col">
+        <div className="flex flex-col space-y-[30px] items-center ">
+          <div className="text-5xl font-semibold ">
+            <span className="text-primary"> Testimoni</span>
+            Pelanggan Kami
+          </div>
+          <div className="mt-[20px] font-thin">
+            Tersedia layanan dibawah ini untuk transformasi digital anda dan
+            bisnis anda
           </div>
         </div>
-        <div className="flex flex-col space-y-5 max-w-[1000px] ">
+        <div className="flex flex-col space-y-5 mt-[60px]">
           <ParallaxCardTestimoni data={testimoni} baseVelocity={5} />
         </div>
       </div>

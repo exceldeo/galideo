@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import LayoutCard from "./LayoutCard";
 
 interface TestimoniCardProps {
   title: string;
@@ -19,7 +20,7 @@ function TestimoniCard({
   layanan,
 }: TestimoniCardProps) {
   return (
-    <div className="rounded-2xl text-sm space-y-3 flex flex-col bg-background px-[30px] py-[20px] min-w-[400px] ">
+    <LayoutCard className="rounded-2xl text-sm space-y-3 flex flex-col  px-[30px] py-[20px] min-w-[400px] ">
       <div className="font-semibold">{title}</div>
       <div>&quot;{description}&quot;</div>
       <div className="flex">
@@ -38,7 +39,7 @@ function TestimoniCard({
           </div>
         </div>
       </div>
-    </div>
+    </LayoutCard>
   );
 }
 

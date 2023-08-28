@@ -21,39 +21,30 @@ const layanan = [
     price: "Rp. 10.000.000",
     isBest: false,
   },
-  {
-    img: "/images/hero.png",
-    title: "Bundling",
-    category: "Website & Mobile",
-    description:
-      "Sesuai untuk bisnis yang telah memiliki website dan membutuhkan perbaruan",
-    price: "Rp. 3.000.000",
-    isBest: true,
-  },
 ];
 
 const fokusLayanan = [
   {
     title: "Fokus Dengan Masalah Bisnis",
-    img: "/images/hero.png",
+    index: "1",
     description:
       "pekerjaan kami lebih fokus pada masalah yang dihadapi sehingga di selesaikan dengan cepat",
   },
   {
+    index: "2",
     title: "Dukungan Teknik Yang Cepat",
-    img: "/images/hero.png",
     description:
       "kami menyediakan tim khusus aftersale untuk mendukung layanan teknis dengan cepat",
   },
   {
+    index: "3",
     title: "Perlindungan Privasi Bisnis",
-    img: "/images/hero.png",
     description:
       "data pada bisnis pastinya sangat krusial dan kami sangat melindungi data privasi bisnis anda",
   },
   {
+    index: "4",
     title: "UI & UX Ramah Oleh Mata",
-    img: "/images/hero.png",
     description:
       "kemudahan pelanggan sangat penting sehingga mudah proses pembelian pada bisnis anda",
   },
@@ -97,16 +88,32 @@ function Layanan() {
           bisnis anda
         </div>
         <div className="flex space-x-[30px] mt-[50px] flex-col sm:flex-row">
-          {fokusLayanan.map((item, i) => {
-            return (
-              <FokusLayananCard
-                key={"fl-" + i}
-                title={item.title}
-                description={item.description}
-                img={item.img}
-              />
-            );
-          })}
+          {fokusLayanan
+            .filter((item) => parseInt(item.index) < 3)
+            .map((item, i) => {
+              return (
+                <FokusLayananCard
+                  key={"fl-" + i}
+                  title={item.title}
+                  description={item.description}
+                  index={item.index}
+                />
+              );
+            })}
+        </div>
+        <div className="flex space-x-[30px] mt-[50px] flex-col sm:flex-row">
+          {fokusLayanan
+            .filter((item) => parseInt(item.index) > 2)
+            .map((item, i) => {
+              return (
+                <FokusLayananCard
+                  key={"fl-" + i}
+                  title={item.title}
+                  description={item.description}
+                  index={item.index}
+                />
+              );
+            })}
         </div>
       </div>
     </section>

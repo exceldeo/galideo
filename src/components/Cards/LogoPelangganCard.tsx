@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import LayoutCard from "./LayoutCard";
 
 interface LogoPelangganCardProps {
   img: string;
@@ -7,7 +8,7 @@ interface LogoPelangganCardProps {
 
 function LogoPelangganCard({ img }: LogoPelangganCardProps, props: any) {
   return (
-    <div className="w-[100px] h-[100px] bg-base-100 rounded-2xl flex items-center justify-center px-[20px] py-[10px] ">
+    <LayoutCard className="w-[100px] h-[100px] rounded-2xl  flex items-center justify-center px-[20px] py-[10px]">
       <Image
         src="/images/hero.png"
         alt="logo pelanggan"
@@ -15,7 +16,7 @@ function LogoPelangganCard({ img }: LogoPelangganCardProps, props: any) {
         height={273}
         objectFit="cover"
       />
-    </div>
+    </LayoutCard>
   );
 }
 

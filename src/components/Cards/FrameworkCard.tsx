@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import LayoutCard from "./LayoutCard";
 
 interface FrameworkCardProps {
   logo: string;
@@ -9,7 +10,7 @@ interface FrameworkCardProps {
 
 function FrameworkCard({ logo, title, description }: FrameworkCardProps) {
   return (
-    <div className="rounded-2xl flex bg-background px-[30px] py-[20px] min-w-[260px] ">
+    <LayoutCard className="rounded-2xl flex  px-[30px] py-[20px] min-w-[260px] ">
       <Image
         src="/images/hero.png"
         alt="hero"
@@ -21,7 +22,7 @@ function FrameworkCard({ logo, title, description }: FrameworkCardProps) {
         <div className="text-primary text-2xl">{title}</div>
         <div className="text-headline mt-[10px] text-sm">{description}</div>
       </div>
-    </div>
+    </LayoutCard>
   );
 }
 

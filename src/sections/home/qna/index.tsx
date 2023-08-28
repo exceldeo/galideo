@@ -1,3 +1,4 @@
+import LayoutCard from "@/components/Cards/LayoutCard";
 import CollapseWithPlusIcon from "@/components/Collapse/CollapseWithPlus";
 import React from "react";
 
@@ -13,24 +14,14 @@ function QnA() {
           Galideo
         </div>
         <div className="mt-7 flex flex-col items-center space-y-6">
-          <CollapseWithPlusIcon
-            index={0}
-            title="Apa itu Galideo?"
-            content="Galideo adalah sebuah perusahaan yang bergerak di bidang IT Solution, yang berfokus pada pengembangan aplikasi berbasis web dan mobile. Galideo juga menyediakan layanan untuk pengembangan website, pengembangan aplikasi mobile, dan pengembangan aplikasi desktop."
-            className="w-3/5"
-          />
-          <CollapseWithPlusIcon
-            index={1}
-            title="Apa itu Galideo?"
-            content="Galideo adalah sebuah perusahaan yang bergerak di bidang IT Solution, yang berfokus pada pengembangan aplikasi berbasis web dan mobile. Galideo juga menyediakan layanan untuk pengembangan website, pengembangan aplikasi mobile, dan pengembangan aplikasi desktop."
-            className="w-3/5"
-          />
-          <CollapseWithPlusIcon
-            index={1}
-            title="Apa itu Galideo?"
-            content="Galideo adalah sebuah perusahaan yang bergerak di bidang IT Solution, yang berfokus pada pengembangan aplikasi berbasis web dan mobile. Galideo juga menyediakan layanan untuk pengembangan website, pengembangan aplikasi mobile, dan pengembangan aplikasi desktop."
-            className="w-3/5"
-          />
+          <LayoutCard className="w-3/5 rounded-xl">
+            <CollapseWithPlusIcon
+              className="bg-opacity-0"
+              index={0}
+              title="Apa itu Galideo?"
+              content="Galideo adalah sebuah perusahaan yang bergerak di bidang IT Solution, yang berfokus pada pengembangan aplikasi berbasis web dan mobile. Galideo juga menyediakan layanan untuk pengembangan website, pengembangan aplikasi mobile, dan pengembangan aplikasi desktop."
+            />
+          </LayoutCard>
         </div>
       </div>
     </section>
