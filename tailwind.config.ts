@@ -20,13 +20,18 @@ const config: Config = {
       },
       colors: {
         background: "#fffffe",
-        backgroundPrimary: "#F2ECFF",
+        backgroundPrimary: "#F1F0F5",
+        backgroundCard: "#F0F0F3",
         headline: "#2b2c34",
         paragraph: "#2b2c34",
         button: "#6246ea",
         primary: "#6246ea",
         secondary: "#d1d1e9",
         tertiary: "#e45858",
+      },
+      boxShadow: {
+        neomorphism:
+          "-10px -10px 30px 0px #FFF, 10px 10px 30px 0px rgba(174, 174, 192, 0.40), -10px -10px 10px 0px rgba(174, 174, 192, 0.25) inset, 10px 10px 10px 0px #FFF inset;",
       },
     },
   },
