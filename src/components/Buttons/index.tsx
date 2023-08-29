@@ -37,6 +37,7 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={cx(
         "du-btn",
+        "rounded-xl from-primary1 to-primary2 bg-gradient-to-r shadow-neomorphsmPrimary hover:shadow-neomorphsmPrimaryHover",
         buttonType === "primary"
           ? "du-btn-primary"
           : buttonType === "secondary"
@@ -63,7 +64,7 @@ const Button: React.FC<ButtonProps> = ({
           ? "du-btn-sm"
           : size === "lg"
           ? "height-[2rem] du-btn-lg"
-          : "",
+          : "px-8 py-4",
         wide ? "du-btn-wide" : "",
         squared ? "du-btn-square" : "",
         circle ? "du-btn-circle" : "",

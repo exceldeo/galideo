@@ -1,23 +1,22 @@
 import Button from "@/components/Buttons";
 import LayoutCard from "@/components/Cards/LayoutCard";
+import { H1, H4 } from "@/components/Typography";
 import Image from "next/image";
 import React from "react";
 
 function Hero() {
   return (
     <section id="home" className=" w-full ">
-      <LayoutCard className="rounded-[80px]">
+      <LayoutCard className="rounded-[80px] p-[60px]">
         <div className="flex w-full justify-between flex-col md:flex-row">
-          <div className="flex flex-col space-y-[50px] w-1/2 px-16 justify-center ">
-            <div className="text-5xl font-[500] text-headline">
-              Naikkan Level Ke Transformasi Digital
-            </div>
-            <div className="font-normal">
+          <div className="flex flex-col space-y-[40px] w-2/3  justify-center">
+            <H1>Naikkan Level Ke Transformasi Digital</H1>
+            <H4>
               Mari kembangkan skill digital bersama kelas kami dan membangun
               bisnis bertransformasi digital
-            </div>
+            </H4>
             <div className="space-x-2">
-              <Button buttonType="primary" size="sm">
+              <Button buttonType="primary" size="md">
                 <div className="font-light"> Porfolio</div>
               </Button>
               {/* <Button buttonType="primary" outlined={true} size="sm">
@@ -25,13 +24,13 @@ function Hero() {
             </Button> */}
             </div>
           </div>
-          <div className="flex ">
+          <div className="flex justify-center">
             <Image
-              width={800}
-              height={800}
-              src="/images/hero.png"
+              width={462}
+              height={401}
+              src="/images/hero1.png"
               alt="hero"
-              className=" rounded-3xl"
+              objectFit="cover"
             />
           </div>
         </div>

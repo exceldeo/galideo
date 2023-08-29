@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <main className={` bg-backgroundPrimary px-[80px] pb-[100px]`}>
-        <div className="space-y-[120px] pt-[120px]">
+        <div className="space-y-[80px] pt-[80px]">
           <Hero />
           <Layanan />
           <Benefit />

@@ -1,21 +1,22 @@
 import FokusLayananCard from "@/components/Cards/FokusLayananCard";
 import LayananCard from "@/components/Cards/LayananCardStyleOne";
+import { H2, H5 } from "@/components/Typography";
 import React from "react";
 
 const layanan = [
   {
-    img: "/images/hero.png",
+    img: "/images/layanan1.png",
     title: "Desain",
-    category: "Website & Mobile",
+    category: ["Website", " Mobile"],
     description:
       "Sesuai untuk bisnis yang telah memiliki website dan membutuhkan perbaruan",
     price: "Rp. 1.000.000",
     isBest: false,
   },
   {
-    img: "/images/hero.png",
+    img: "/images/layanan2.png",
     title: "Development",
-    category: "Website & Mobile",
+    category: ["Website", " Mobile"],
     description:
       "Sesuai untuk bisnis yang telah memiliki website dan membutuhkan perbaruan",
     price: "Rp. 10.000.000",
@@ -52,16 +53,16 @@ const fokusLayanan = [
 
 function Layanan() {
   return (
-    <section id="layanan" className="flex flex-col space-y-[120px] ">
+    <section id="layanan" className="flex flex-col space-y-[50px]">
       <div className="flex flex-col items-center">
-        <div className="text-5xl font-semibold ">
+        <H2>
           Layanan
           <span className="text-primary"> Kami</span>
-        </div>
-        <div className="mt-[20px] font-thin">
+        </H2>
+        <H5 className="">
           Tersedia layanan dibawah ini untuk transformasi digital anda dan
           bisnis anda
-        </div>
+        </H5>
         <div className="flex space-x-[30px] mt-[50px] flex-col sm:flex-row">
           {layanan.map((item, i) => {
             return (
@@ -79,14 +80,14 @@ function Layanan() {
         </div>
       </div>
       <div className="flex flex-col items-center">
-        <div className="text-5xl font-semibold ">
+        <H2>
           Fokus
           <span className="text-primary"> Layanan Kami</span>
-        </div>
-        <div className="mt-[20px] font-thin">
+        </H2>
+        <H5 className="">
           Tersedia layanan dibawah ini untuk transformasi digital anda dan
           bisnis anda
-        </div>
+        </H5>
         <div className="flex space-x-[30px] mt-[50px] flex-col sm:flex-row">
           {fokusLayanan
             .filter((item) => parseInt(item.index) < 3)

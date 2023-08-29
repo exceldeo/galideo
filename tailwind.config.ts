@@ -25,13 +25,21 @@ const config: Config = {
         headline: "#2b2c34",
         paragraph: "#2b2c34",
         button: "#6246ea",
-        primary: "#6246ea",
+        primary: "#6246EA",
         secondary: "#d1d1e9",
         tertiary: "#e45858",
+        primary1: "#5039BE",
+        primary2: "#7453FF",
+        textBlack: "#565656",
+        navbarBlack: "#373737",
       },
       boxShadow: {
         neomorphism:
           "-10px -10px 30px 0px #FFF, 10px 10px 30px 0px rgba(174, 174, 192, 0.40), -10px -10px 10px 0px rgba(174, 174, 192, 0.25) inset, 10px 10px 10px 0px #FFF inset;",
+        neomorphsmPrimary:
+          "10px 10px 15px 0px rgba(89, 64, 213, 0.25), -10px -10px 15px 0px rgba(107, 76, 255, 0.25);",
+        neomorphsmPrimaryHover:
+          " 10px 10px 0px rgba(174, 174, 192, 0.20), -10px 10px 10px 0px rgba(69, 44, 192, 0.70) inset;",
       },
     },
   },

@@ -1,20 +1,20 @@
 import { ParallaxCardTestimoni } from "@/components/Helper/Parallax/ParallaxCardTestimoni";
 import React from "react";
 import ListLogoCard from "./ListLogoCard";
+import { H2, H5 } from "@/components/Typography";
 
 function Customer() {
   return (
-    <section id="customer" className="pt-[80px] w-full">
-      <div className="flex flex-col space-y-[30px] items-center ">
-        <div className="text-5xl font-semibold ">
+    <section id="customer" className="w-full">
+      <div className="flex flex-col items-center ">
+        <H2>
           Daftar
           <span className="text-primary"> Pelanggan Setia</span>
-          Kami
-        </div>
-        <div className="mt-[20px] font-thin">
+        </H2>
+        <H5 className="">
           Tersedia layanan dibawah ini untuk transformasi digital anda dan
           bisnis anda
-        </div>
+        </H5>
       </div>
       <div className="mt-[60px]">
         <ListLogoCard />

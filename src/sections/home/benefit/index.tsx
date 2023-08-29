@@ -1,6 +1,7 @@
+import LayoutCard from "@/components/Cards/LayoutCard";
+import { H3, P } from "@/components/Typography";
 import Image from "next/image";
 import React from "react";
-import { AiFillCheckCircle } from "react-icons/ai";
 
 const benefit = [
   "Talent designer dan developer kami professional serta berpengalaman di perusahaan multinasional",
@@ -11,43 +12,44 @@ const benefit = [
 function Benefit() {
   return (
     <section id="benefit" className=" w-full">
-      <div className="flex w-full justify-between flex-col md:flex-row ">
-        <div className="flex flex-col space-y-[50px] w-2/3 justify-center pr-[50px]">
-          <div>
-            <div className="text-primary text-lg">
-              Transformasi Digital Industri 4.0
-            </div>
-            <div className="text-3xl font-medium text-headline mt-[20px]">
-              Saat nya transformasikan bisnis anda ke digital bersama kami
-            </div>
+      <LayoutCard className="rounded-[80px] p-[60px]">
+        <div className="flex w-full justify-between flex-col md:flex-row ">
+          <div className="">
+            <Image
+              width={554}
+              height={416}
+              src="/images/benefit.png"
+              alt="hero"
+              className=" rounded-3xl"
+            />
           </div>
-          <div className="flex flex-col space-y-4">
-            {benefit.map((item, i) => {
-              return (
-                <div className="grid grid-cols-12 items-center" key={"b" + i}>
-                  <div className="flex justify-center">
-                    <AiFillCheckCircle className="text-primary" size={32} />
+          <div className="flex flex-col space-y-[50px] w-3/4 justify-center">
+            <div>
+              <H3>
+                Kenapa
+                <span className="text-primary"> Galideo?</span>
+              </H3>
+            </div>
+            <div className="flex flex-col space-y-4">
+              {benefit.map((item, i) => {
+                return (
+                  <div className="grid grid-cols-12 items-center" key={"b" + i}>
+                    <div className="flex justify-center">
+                      <Image
+                        src="/icons/rounded_check_icon.png"
+                        width={32}
+                        height={32}
+                        alt="check"
+                      />
+                    </div>
+                    <P className="col-span-11">{item}</P>
                   </div>
-
-                  <span className="text-xl font-light col-span-11">
-                    {" "}
-                    {item}
-                  </span>
-                </div>
-              );
-            })}
+                );
+              })}
+            </div>
           </div>
         </div>
-        <div className="flex ">
-          <Image
-            width={554}
-            height={416}
-            src="/images/hero.png"
-            alt="hero"
-            className=" rounded-3xl"
-          />
-        </div>
-      </div>
+      </LayoutCard>
     </section>
   );
 }
