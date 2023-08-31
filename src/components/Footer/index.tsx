@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="du-footer text-base-content bg-backgroundPrimary flex justify-between px-[80px] py-[40px]">
+    <footer className="du-footer container text-base-content bg-backgroundPrimary flex justify-between py-[40px]">
       <div>
         <span className="text-xl uppercase text-primary">Galideo</span>
         <p>

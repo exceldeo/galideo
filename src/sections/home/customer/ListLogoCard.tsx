@@ -1,22 +1,20 @@
 import LayoutCard from "@/components/Cards/LayoutCard";
 import LogoPelangganCard from "@/components/Cards/LogoPelangganCard";
+import { H3, H5, P } from "@/components/Typography";
 import React from "react";
 
 const pelanggan1 = [
   {
-    img: "/images/hero.png",
+    img: "/images/customer/its.png",
   },
   {
-    img: "/images/hero.png",
+    img: "/images/customer/sidoarjo.png",
   },
   {
-    img: "/images/hero.png",
+    img: "/images/customer/tuban.png",
   },
   {
-    img: "/images/hero.png",
-  },
-  {
-    img: "/images/hero.png",
+    img: "/images/customer/unair.png",
   },
 ];
 
@@ -26,9 +24,13 @@ function ListLogoCard() {
       {pelanggan1.map((item, i) => {
         return <LogoPelangganCard key={i} img={item.img} />;
       })}
-      <LayoutCard className=" h-[100px] rounded-2xl  flex flex-col justify-center px-[20px] py-[10px]">
-        <div className="text-2xl font-semibold">20+</div>
-        <div className="text-md">Pelanggan lainnya</div>
+      <LayoutCard className=" h-[100px] rounded-2xl space-y-1 flex flex-col justify-center px-[20px] py-[10px]">
+        <H3>
+          <span className="font-bold">20+</span>
+        </H3>
+        <P>
+          <span className="font-normal">Pelanggan lainnya</span>
+        </P>
       </LayoutCard>
     </div>
   );

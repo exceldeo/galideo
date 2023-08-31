@@ -10,11 +10,11 @@ function LogoPelangganCard({ img }: LogoPelangganCardProps, props: any) {
   return (
     <LayoutCard className="w-[100px] h-[100px] rounded-2xl  flex items-center justify-center px-[20px] py-[10px]">
       <Image
-        src="/images/hero.png"
+        src={img}
         alt="logo pelanggan"
-        width={410}
-        height={273}
-        objectFit="cover"
+        width={60}
+        height={60}
+        className="object-none max-w-[60px] max-h-[60px]"
       />
     </LayoutCard>
   );

@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import LayoutCard from "./LayoutCard";
 import { H3, H4, P } from "../Typography";
+import LayoutCard1 from "./LayoutCard1";
 
 interface LayananCardStyleOneProps {
   title: string;
@@ -39,12 +40,12 @@ function LayananCardStyleOne(
         <div className="flex">
           {category.map((item, i) => {
             return (
-              <LayoutCard
+              <LayoutCard1
                 key={"c-" + i}
                 className="bg-[#F5F5F5] rounded-[10px] px-[10px] py-[5px] text-xs text-[#565656] mt-[10px] mr-[10px]"
               >
                 {item}
-              </LayoutCard>
+              </LayoutCard1>
             );
           })}
         </div>

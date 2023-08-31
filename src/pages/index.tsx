@@ -12,8 +12,8 @@ import Customer from "@/sections/home/customer";
 export default function Home() {
   return (
     <>
-      <main className={` bg-backgroundPrimary px-[80px] pb-[100px]`}>
-        <div className="space-y-[80px] pt-[80px]">
+      <main className={` bg-backgroundPrimary `}>
+        <div className="space-y-[80px] pt-[80px] ">
           <Hero />
           <Layanan />
           <Benefit />
@@ -21,9 +21,9 @@ export default function Home() {
           <Customer />
           <Testimoni />
           <QnA />
+          <Footer />
         </div>
       </main>
-      <Footer />
     </>
   );
 }

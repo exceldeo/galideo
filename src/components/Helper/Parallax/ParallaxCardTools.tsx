@@ -47,26 +47,26 @@ export function ParallaxCardTools({ data, baseVelocity = 100 }: ParallaxProps) {
 
   return (
     <div className="parallax overflow-hidden w-full flex flex-row relative ">
-      <motion.div className="scroller flex space-x-4" style={{ x }}>
+      <motion.div className="scroller flex space-x-7" style={{ x }}>
         {data.map((item, i) => {
           return (
             <motion.span key={i}>
               <FrameworkCard
                 title={item.title}
-                logo="/images/hero.png"
+                logo={item.logo}
                 description={item.description}
               />
             </motion.span>
           );
         })}
       </motion.div>
-      <motion.div className="scroller flex space-x-4 ml-4" style={{ x }}>
+      <motion.div className="scroller flex space-x-7 ml-7" style={{ x }}>
         {data.map((item, i) => {
           return (
             <motion.span key={i}>
               <FrameworkCard
                 title={item.title}
-                logo="/images/hero.png"
+                logo={item.logo}
                 description={item.description}
               />
             </motion.span>

@@ -40,6 +40,8 @@ const config: Config = {
           "10px 10px 15px 0px rgba(89, 64, 213, 0.25), -10px -10px 15px 0px rgba(107, 76, 255, 0.25);",
         neomorphsmPrimaryHover:
           " 10px 10px 0px rgba(174, 174, 192, 0.20), -10px 10px 10px 0px rgba(69, 44, 192, 0.70) inset;",
+        neomorphsmStyle1:
+          " -10px -10px 30px 0px #FFF, 10px 10px 30px 0px rgba(174, 174, 192, 0.40);",
       },
     },
   },

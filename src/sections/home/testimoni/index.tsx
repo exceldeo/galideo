@@ -27,6 +27,30 @@ const testimoni = [
     job: "Mahasiswa",
     layanan: "Web Development",
   },
+  {
+    title: "Saya Puas",
+    image: "/images/hero.png",
+    description: "Layanan yang diberikan sangat memuaskan",
+    name: "Rizky",
+    job: "Mahasiswa",
+    layanan: "Web Development",
+  },
+  {
+    title: "Saya Puas",
+    image: "/images/hero.png",
+    description: "Layanan yang diberikan sangat memuaskan",
+    name: "Rizky",
+    job: "Mahasiswa",
+    layanan: "Web Development",
+  },
+  {
+    title: "Saya Puas",
+    image: "/images/hero.png",
+    description: "Layanan yang diberikan sangat memuaskan",
+    name: "Rizky",
+    job: "Mahasiswa",
+    layanan: "Web Development",
+  },
 ];
 
 function Testimoni() {
@@ -44,7 +68,7 @@ function Testimoni() {
           </H5>
         </div>
         <div className="flex flex-col space-y-5 mt-[60px]">
-          <ParallaxCardTestimoni data={testimoni} baseVelocity={5} />
+          <ParallaxCardTestimoni data={testimoni} baseVelocity={3} />
         </div>
       </div>
     </section>

@@ -52,7 +52,7 @@ export function ParallaxCardTestimoni({
 
   return (
     <div className="parallax overflow-hidden w-full flex flex-row relative ">
-      <motion.div className="scroller flex space-x-2" style={{ x }}>
+      <motion.div className="scroller flex space-x-6" style={{ x }}>
         {data.map((item, i) => {
           return (
             <motion.span key={i}>
@@ -68,7 +68,7 @@ export function ParallaxCardTestimoni({
           );
         })}
       </motion.div>
-      <motion.div className="scroller flex space-x-2 ml-2" style={{ x }}>
+      <motion.div className="scroller flex space-x-6 ml-6" style={{ x }}>
         {data.map((item, i) => {
           return (
             <motion.span key={i}>

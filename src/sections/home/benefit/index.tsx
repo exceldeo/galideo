@@ -11,7 +11,7 @@ const benefit = [
 
 function Benefit() {
   return (
-    <section id="benefit" className=" w-full">
+    <section id="benefit" className="container w-full">
       <LayoutCard className="rounded-[80px] p-[60px]">
         <div className="flex w-full justify-between flex-col md:flex-row ">
           <div className="">

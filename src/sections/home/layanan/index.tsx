@@ -53,7 +53,7 @@ const fokusLayanan = [
 
 function Layanan() {
   return (
-    <section id="layanan" className="flex flex-col space-y-[50px]">
+    <section id="layanan" className="flex flex-col space-y-[50px] container">
       <div className="flex flex-col items-center">
         <H2>
           Layanan
@@ -63,7 +63,7 @@ function Layanan() {
           Tersedia layanan dibawah ini untuk transformasi digital anda dan
           bisnis anda
         </H5>
-        <div className="flex space-x-[30px] mt-[50px] flex-col sm:flex-row">
+        <div className="flex sm:space-x-[30px] mt-[50px] flex-col sm:flex-row w-full">
           {layanan.map((item, i) => {
             return (
               <LayananCard

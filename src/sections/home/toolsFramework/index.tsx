@@ -5,72 +5,72 @@ import React from "react";
 const framework1 = [
   {
     title: "Flutter",
-    logo: "/images/hero.png",
+    logo: "/icons/flutter.png",
     description: "Mobile",
   },
   {
     title: "Figma",
-    logo: "/images/hero.png",
+    logo: "/icons/figma.png",
     description: "Design",
   },
   {
     title: "React",
-    logo: "/images/hero.png",
+    logo: "/icons/react.png",
     description: "Web Frontend",
   },
   {
     title: "NextJS",
-    logo: "/images/hero.png",
+    logo: "/icons/nextjs.png",
     description: "Web Frontend",
   },
   {
     title: "NodeJS",
-    logo: "/images/hero.png",
+    logo: "/icons/nodejs.webp",
     description: "Web Backend",
   },
   {
     title: "Laravel",
-    logo: "/images/hero.png",
+    logo: "/icons/laravel.png",
     description: "Web Backend",
   },
   {
     title: "MySQL",
-    logo: "/images/hero.png",
+    logo: "/icons/mysql.png",
     description: "Database",
   },
   {
     title: "Miro",
-    logo: "/images/hero.png",
+    logo: "/icons/miro.png",
     description: "Design",
   },
   {
     title: "Kotlin",
-    logo: "/images/hero.png",
+    logo: "/icons/kotlin.png",
     description: "Mobile",
   },
   {
     title: "Strapi",
-    logo: "/images/hero.png",
+    logo: "/icons/stapi.png",
     description: "Web Backend",
   },
   {
     title: "ExpressJS",
-    logo: "/images/hero.png",
+    logo: "/icons/expressjs.png",
     description: "Web Backend",
   },
   {
     title: "PostgreSQL",
-    logo: "/images/hero.png",
+    logo: "/icons/postgresql.png",
     description: "Database",
   },
   {
     title: "Redis",
-    logo: "/images/hero.png",
+    logo: "/icons/redis.jpg",
     description: "Database",
   },
   {
     title: "MongoDB",
-    logo: "/images/hero.png",
+    logo: "/icons/monggodb.png",
     description: "Database",
   },
 ];
@@ -90,7 +90,7 @@ function ToolsFramework() {
           </H5>
         </div>
 
-        <ParallaxCardTools data={framework1} baseVelocity={1} />
+        <ParallaxCardTools data={framework1} baseVelocity={3} />
       </div>
     </section>
   );

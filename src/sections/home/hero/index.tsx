@@ -6,7 +6,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <section id="home" className=" w-full ">
+    <section id="home" className=" w-full container">
       <LayoutCard className="rounded-[80px] p-[60px]">
         <div className="flex w-full justify-between flex-col md:flex-row">
           <div className="flex flex-col space-y-[40px] w-2/3  justify-center">
