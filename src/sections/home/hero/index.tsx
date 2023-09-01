@@ -1,6 +1,7 @@
 import Button from "@/components/Buttons";
 import LayoutCard from "@/components/Cards/LayoutCard";
 import { H1, H4 } from "@/components/Typography";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
@@ -25,13 +26,24 @@ function Hero() {
             </div>
           </div>
           <div className="flex justify-center">
-            <Image
-              width={462}
-              height={401}
-              src="/images/hero1.png"
-              alt="hero"
-              objectFit="cover"
-            />
+            {/* bounce image framer */}
+            <motion.div
+              initial={{ y: -10 }}
+              animate={{ y: 20 }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "reverse",
+                duration: 2,
+                ease: "easeInOut",
+              }}
+            >
+              <Image
+                width={462}
+                height={401}
+                src="/images/hero1.png"
+                alt="hero"
+              />
+            </motion.div>
           </div>
         </div>
       </LayoutCard>

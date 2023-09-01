@@ -12,7 +12,6 @@ export const StyleH1 = styled.h1`
 
 export const StyleH2 = styled.div`
   color: #565656;
-  text-align: center;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -54,4 +53,13 @@ export const StyleP = styled.div`
   font-style: normal;
   font-weight: 300;
   line-height: 24px; /* 133.333% */
+`;
+
+export const StyleNavbar = styled.div`
+  color: #373737;
+  font-family: Nunito;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 100% */
 `;

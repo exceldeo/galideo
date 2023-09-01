@@ -51,7 +51,7 @@ export function ParallaxCardTestimoni({
   });
 
   return (
-    <div className="parallax overflow-hidden w-full flex flex-row relative ">
+    <div className="parallax overflow-hidden w-full flex flex-row relative py-7">
       <motion.div className="scroller flex space-x-6" style={{ x }}>
         {data.map((item, i) => {
           return (

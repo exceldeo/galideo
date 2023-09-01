@@ -1,5 +1,5 @@
 import LayoutCard from "@/components/Cards/LayoutCard";
-import { H3, P } from "@/components/Typography";
+import { H2, H3, H4, H5, P } from "@/components/Typography";
 import Image from "next/image";
 import React from "react";
 
@@ -42,7 +42,7 @@ function Benefit() {
                         alt="check"
                       />
                     </div>
-                    <P className="col-span-11">{item}</P>
+                    <H5 className="col-span-11">{item}</H5>
                   </div>
                 );
               })}

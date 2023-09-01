@@ -46,7 +46,7 @@ export function ParallaxCardTools({ data, baseVelocity = 100 }: ParallaxProps) {
   });
 
   return (
-    <div className="parallax overflow-hidden w-full flex flex-row relative ">
+    <div className="parallax overflow-hidden w-full flex flex-row relative py-7">
       <motion.div className="scroller flex space-x-7" style={{ x }}>
         {data.map((item, i) => {
           return (
