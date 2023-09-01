@@ -1,14 +1,14 @@
-import Hero from "@/sections/profile/hero";
+import PorfolioListSection from "@/sections/porfolio/porfolioList";
 import React from "react";
 
-function ProfilePage() {
+function PorfolioPage() {
   return (
     <main className={` bg-backgroundPrimary min-h-[75vh]`}>
       <div className="py-[80px] ">
-        <Hero />
+        <PorfolioListSection />
       </div>
     </main>
   );
 }
 
-export default ProfilePage;
+export default PorfolioPage;

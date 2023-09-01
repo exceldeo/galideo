@@ -1,6 +1,6 @@
 import LayoutCard1 from "@/components/Cards/LayoutCard1";
 import CollapseWithPlusIcon from "@/components/Collapse/CollapseWithPlus";
-import { H2, H5 } from "@/components/Typography";
+import { H2, H4 } from "@/components/Typography";
 import React from "react";
 
 function QnA() {
@@ -11,10 +11,10 @@ function QnA() {
           <span className="text-primary">Pertanyaan </span>
           yang sering ditanyakan
         </H2>
-        <H5 className="">
+        <H4 className="">
           Anda dapat melihat Pertanyaan apa saja yang sering ditanyakan pada
           Galideo
-        </H5>
+        </H4>
         <div className="flex flex-col items-center space-y-5 mt-[40px]">
           <LayoutCard1 className="w-3/5 rounded-xl">
             <CollapseWithPlusIcon

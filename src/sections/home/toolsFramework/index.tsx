@@ -1,5 +1,5 @@
 import { ParallaxCardTools } from "@/components/Helper/Parallax/ParallaxCardTools";
-import { H2, H5 } from "@/components/Typography";
+import { H2, H4, H5 } from "@/components/Typography";
 import React from "react";
 
 const framework1 = [
@@ -79,15 +79,15 @@ function ToolsFramework() {
   return (
     <section id="tools" className="w-full">
       <div className="flex flex-col space-y-[30px] items-center ">
-        <div>
+        <div className="flex flex-col items-center ">
           <H2>
             Kami Gunakan
             <span className="text-primary"> Tools & Framework</span>
           </H2>
-          <H5 className="">
+          <H4 className="">
             Tersedia layanan dibawah ini untuk transformasi digital anda dan
             bisnis anda
-          </H5>
+          </H4>
         </div>
 
         <ParallaxCardTools data={framework1} baseVelocity={3} />

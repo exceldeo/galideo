@@ -34,7 +34,7 @@ export const StyleH4 = styled.div`
   text-edge: cap;
   font-size: 22px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 39.5px; /* 164.583% */
 `;
 

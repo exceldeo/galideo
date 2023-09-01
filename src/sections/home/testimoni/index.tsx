@@ -1,5 +1,5 @@
 import { ParallaxCardTestimoni } from "@/components/Helper/Parallax/ParallaxCardTestimoni";
-import { H2, H5 } from "@/components/Typography";
+import { H2, H4 } from "@/components/Typography";
 import React from "react";
 
 const testimoni = [
@@ -62,10 +62,10 @@ function Testimoni() {
             <span className="text-primary">Testimoni </span>
             Pelanggan Kami
           </H2>
-          <H5 className="">
+          <H4 className="">
             Tersedia layanan dibawah ini untuk transformasi digital anda dan
             bisnis anda
-          </H5>
+          </H4>
         </div>
         <div className="flex flex-col space-y-5 mt-[60px]">
           <ParallaxCardTestimoni data={testimoni} baseVelocity={3} />

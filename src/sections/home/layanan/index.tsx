@@ -1,6 +1,6 @@
 import FokusLayananCard from "@/components/Cards/FokusLayananCard";
 import LayananCard from "@/components/Cards/LayananCardStyleOne";
-import { H2, H5 } from "@/components/Typography";
+import { H2, H4 } from "@/components/Typography";
 import React from "react";
 
 const layanan = [
@@ -59,10 +59,10 @@ function Layanan() {
           Layanan
           <span className="text-primary"> Kami</span>
         </H2>
-        <H5 className="">
+        <H4 className="">
           Tersedia layanan dibawah ini untuk transformasi digital anda dan
           bisnis anda
-        </H5>
+        </H4>
         <div className="flex sm:space-x-[30px] mt-[50px] flex-col sm:flex-row w-full">
           {layanan.map((item, i) => {
             return (
@@ -84,10 +84,10 @@ function Layanan() {
           Fokus
           <span className="text-primary"> Layanan Kami</span>
         </H2>
-        <H5 className="">
+        <H4 className="">
           Tersedia layanan dibawah ini untuk transformasi digital anda dan
           bisnis anda
-        </H5>
+        </H4>
         <div className="flex space-x-[30px] mt-[50px] flex-col sm:flex-row">
           {fokusLayanan
             .filter((item) => parseInt(item.index) < 3)

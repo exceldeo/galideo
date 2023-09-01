@@ -27,7 +27,12 @@ function Navbar() {
                   <NavbarText>Profile</NavbarText>
                 </Link>
               </li>
-
+              <li>
+                <Link href={"/porfolio"}>
+                  {" "}
+                  <NavbarText>Porfolio</NavbarText>
+                </Link>
+              </li>
               <li tabIndex={0}>
                 <details>
                   <summary>
@@ -44,9 +49,10 @@ function Navbar() {
                 </details>
               </li>
               <li>
-                <a>
+                <Link href={"/news"}>
+                  {" "}
                   <NavbarText>Berita</NavbarText>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
