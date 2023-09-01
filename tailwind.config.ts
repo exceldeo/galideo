@@ -44,7 +44,7 @@ const config: Config = {
           " -10px -10px 30px 0px #FFF, 10px 10px 30px 0px rgba(174, 174, 192, 0.40);",
       },
       rotate: {
-        70: "70deg",
+        72: "72deg",
         135: "135deg",
         225: "225deg",
       },
