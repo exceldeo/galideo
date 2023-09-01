@@ -22,10 +22,10 @@ function Navbar() {
                 </a>
               </li>
               <li>
-                <a>
+                <Link href={"/profile"}>
                   {" "}
                   <NavbarText>Profile</NavbarText>
-                </a>
+                </Link>
               </li>
 
               <li tabIndex={0}>
