@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyleH1 = styled.h1`
+export const StyleH1 = styled.div`
   color: #565656;
   leading-trim: both;
   text-edge: cap;
