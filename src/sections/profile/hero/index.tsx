@@ -7,10 +7,10 @@ import React from "react";
 
 function Hero() {
   return (
-    <section id="home" className=" w-full container">
-      <LayoutCard className="rounded-[80px] p-[60px]">
-        <div className="flex w-full justify-between flex-col md:flex-row">
-          <div className="flex flex-col space-y-[40px] w-2/3  justify-center">
+    <section id="home" className=" md:container container-mobile">
+      <LayoutCard className="rounded-[80px] ">
+        <div className="flex w-full justify-between flex-col-reverse lg:flex-row">
+          <div className="flex flex-col space-y-[40px] lg:w-2/3  justify-center pl-[60px] lg:pr-[0px] pr-[60px] py-[60px]">
             <H1>Siapa Kami?</H1>
             <H4>
               berpengalaman dalam mengembangkan solusi software dan talenta
@@ -21,7 +21,7 @@ function Hero() {
               kabupaten bandung jawa barat.
             </H4>
           </div>
-          <div className="flex justify-center px-6">
+          <div className="flex justify-center lg:pr-[80px] pt-[60px] lg:pb-[10px]">
             <Image
               width={402}
               height={401}

@@ -6,7 +6,7 @@ import React from "react";
 function QuoteSection() {
   return (
     <section id="quote">
-      <LayoutCard className="rounded-3xl  overflow-hidden">
+      <LayoutCard className="rounded-3xl  overflow-hidden ">
         <div className="flex flex-col">
           <div className="pt-14 px-14">
             <H2>Kami Siap Melayani</H2>

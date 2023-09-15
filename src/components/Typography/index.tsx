@@ -17,7 +17,7 @@ const H1: React.FC<HeadingProps> = ({ className, ...rest }) => {
 };
 
 const H2: React.FC<HeadingProps> = ({ className, ...rest }) => {
-  return <StyleH2 className={cx("", className ?? "")} {...rest} />;
+  return <StyleH2 className={cx(className ?? "")} {...rest} />;
 };
 
 const H3: React.FC<HeadingProps> = ({ className, ...rest }) => {

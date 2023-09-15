@@ -16,8 +16,9 @@ export default function useMediaQuery(query: validScreenSize) {
   const [matches, setMatches] = useState<boolean>(true);
   useEffect(() => {
     setMatches(getMatches(query));
-  }, []);
+  }, [query]);
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   function handleChange() {
     setMatches(getMatches(query));
   }
@@ -27,6 +28,6 @@ export default function useMediaQuery(query: validScreenSize) {
     return () => {
       window.removeEventListener("resize", handleChange);
     };
-  }, [query]);
+  }, [handleChange, query]);
   return matches;
 }

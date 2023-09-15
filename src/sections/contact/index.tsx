@@ -9,12 +9,13 @@ function ContactPage() {
   const lg = useMediaQuery("lg");
 
   return (
-    <div className="container">
+    <div className="md:container container-mobile">
       <div
         className={cx(
           lg
-            ? "grid grid-rows-3 grid-flow-col gap-20"
-            : "flex flex-col space-y-10"
+            ? "grid grid-rows-2 grid-flow-col grid-cols-2 gap-20 "
+            : "flex flex-col space-y-10",
+          ""
         )}
       >
         <div>

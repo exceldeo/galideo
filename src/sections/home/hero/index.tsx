@@ -1,17 +1,23 @@
 import Button from "@/components/Buttons";
 import LayoutCard from "@/components/Cards/LayoutCard";
-import { H1, H4 } from "@/components/Typography";
+import { H1, H2, H3, H4, H5 } from "@/components/Typography";
+import { useMediaQuery } from "@/hooks";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
 function Hero() {
+  const md = useMediaQuery("md");
   return (
-    <section id="home" className=" w-full container">
+    <section id="home" className=" w-full md:container container-mobile">
       <LayoutCard className="rounded-[80px] p-[60px]">
-        <div className="flex w-full justify-between flex-col md:flex-row">
-          <div className="flex flex-col space-y-[40px] w-2/3  justify-center">
-            <H1>Naikkan Level Ke Transformasi Digital</H1>
+        <div className="flex w-full justify-between flex-col lg:flex-row">
+          <div className="flex flex-col space-y-[20px] md:space-y-[40px] md:w-2/3 w-full justify-center">
+            {md ? (
+              <H1>Naikkan Level Ke Transformasi Digital</H1>
+            ) : (
+              <H2>Naikkan Level Ke Transformasi Digital</H2>
+            )}
             <H4>
               Mari kembangkan skill digital bersama kelas kami dan membangun
               bisnis bertransformasi digital
@@ -25,7 +31,7 @@ function Hero() {
             </Button> */}
             </div>
           </div>
-          <div className="flex justify-center">
+          <div className="justify-center lg:flex hidden">
             {/* bounce image framer */}
             <motion.div
               initial={{ y: -10 }}

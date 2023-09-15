@@ -62,8 +62,8 @@ const porfolio = [
 
 function PorfolioListSection() {
   return (
-    <section id="porfolio" className="w-full container">
-      <div className="flex flex-col items-center ">
+    <section id="porfolio" className="md:container container-mobile">
+      <div className="flex flex-col items-center text-center">
         <H2>
           Berikut Pekerjaan Untuk
           <span className="text-primary"> Klien Kami</span>
@@ -73,7 +73,7 @@ function PorfolioListSection() {
           bisnis anda
         </H4>
       </div>
-      <div className="mt-[60px] grid grid-cols-3 gap-4">
+      <div className="mt-[60px] grid md:grid-cols-3 gap-4 grid-cols-1">
         {porfolio.map((item, i) => {
           return (
             <PorfolioCard

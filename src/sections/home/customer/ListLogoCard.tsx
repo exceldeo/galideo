@@ -20,7 +20,7 @@ const pelanggan1 = [
 
 function ListLogoCard() {
   return (
-    <div className="flex flex-row space-x-5 justify-center">
+    <div className="flex flex-row space-x-5 justify-center flex-wrap">
       {pelanggan1.map((item, i) => {
         return <LogoPelangganCard key={i} img={item.img} />;
       })}
