@@ -55,9 +55,9 @@ const testimoni = [
 
 function Testimoni() {
   return (
-    <section id="testimoni" className=" w-full">
+    <section id="testimoni" className=" md:container container-mobile">
       <div className="flex w-full flex-col">
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center text-center">
           <H2>
             <span className="text-primary">Testimoni </span>
             Pelanggan Kami

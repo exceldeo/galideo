@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div className="bg-backgroundPrimary">
-      <footer className="du-footer container text-base-content  flex justify-between py-[40px]">
+      <footer className="du-footer md:container container-mobile text-base-content  flex justify-between py-[40px]">
         <div>
           <span className="text-xl uppercase text-primary">Galideo</span>
           <p>
@@ -24,7 +24,7 @@ function Footer() {
         <a className="du-link du-link-hover">Marketing</a>
         <a className="du-link du-link-hover">Advertisement</a>
       </div> */}
-        <div className="flex space-x-20">
+        <div className="flex md:space-x-20 md:flex-row flex-col">
           <div className="flex flex-col space-y-1">
             <span className="du-footer-title text-black">Web Design</span>
             <a className="du-link du-link-hover">User Interface Designer</a>

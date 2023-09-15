@@ -5,8 +5,8 @@ import React from "react";
 
 function QnA() {
   return (
-    <section id="qna" className="container w-full">
-      <div className="flex w-full justify-center flex-col items-center">
+    <section id="qna" className=" md:container container-mobile">
+      <div className="flex w-full justify-center flex-col items-center text-center">
         <H2>
           <span className="text-primary">Pertanyaan </span>
           yang sering ditanyakan
@@ -16,30 +16,16 @@ function QnA() {
           Galideo
         </H4>
         <div className="flex flex-col items-center space-y-5 mt-[40px]">
-          <LayoutCard1 className="w-3/5 rounded-xl">
-            <CollapseWithPlusIcon
-              className="bg-opacity-0"
-              index={0}
-              title="Apa itu Galideo?"
-              content="Galideo adalah sebuah perusahaan yang bergerak di bidang IT Solution, yang berfokus pada pengembangan aplikasi berbasis web dan mobile. Galideo juga menyediakan layanan untuk pengembangan website, pengembangan aplikasi mobile, dan pengembangan aplikasi desktop."
-            />
-          </LayoutCard1>
-          <LayoutCard1 className="w-3/5 rounded-xl">
-            <CollapseWithPlusIcon
-              className="bg-opacity-0"
-              index={0}
-              title="Apa itu Galideo?"
-              content="Galideo adalah sebuah perusahaan yang bergerak di bidang IT Solution, yang berfokus pada pengembangan aplikasi berbasis web dan mobile. Galideo juga menyediakan layanan untuk pengembangan website, pengembangan aplikasi mobile, dan pengembangan aplikasi desktop."
-            />
-          </LayoutCard1>
-          <LayoutCard1 className="w-3/5 rounded-xl">
-            <CollapseWithPlusIcon
-              className="bg-opacity-0"
-              index={0}
-              title="Apa itu Galideo?"
-              content="Galideo adalah sebuah perusahaan yang bergerak di bidang IT Solution, yang berfokus pada pengembangan aplikasi berbasis web dan mobile. Galideo juga menyediakan layanan untuk pengembangan website, pengembangan aplikasi mobile, dan pengembangan aplikasi desktop."
-            />
-          </LayoutCard1>
+          {[...Array(3)].map((_, i) => (
+            <LayoutCard1 className="md:w-3/5 w-full rounded-xl" key={i}>
+              <CollapseWithPlusIcon
+                className="bg-opacity-0"
+                index={i}
+                title="Apa itu Galideo?"
+                content="Galideo adalah sebuah perusahaan yang bergerak di bidang IT Solution, yang berfokus pada pengembangan aplikasi berbasis web dan mobile. Galideo juga menyediakan layanan untuk pengembangan website, pengembangan aplikasi mobile, dan pengembangan aplikasi desktop."
+              />
+            </LayoutCard1>
+          ))}
         </div>
       </div>
     </section>

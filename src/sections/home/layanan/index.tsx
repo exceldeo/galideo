@@ -53,7 +53,7 @@ const fokusLayanan = [
 
 function Layanan() {
   return (
-    <section id="layanan" className="flex flex-col space-y-[50px] container">
+    <section id="layanan" className="flex flex-col space-y-[50px] md:container container-mobile">
       <div className="flex flex-col items-center">
         <H2>
           Layanan
@@ -63,7 +63,7 @@ function Layanan() {
           Tersedia layanan dibawah ini untuk transformasi digital anda dan
           bisnis anda
         </H4>
-        <div className="flex sm:space-x-[30px] mt-[50px] flex-col sm:flex-row w-full">
+        <div className="flex md:space-x-[30px] mt-[50px] flex-col md:flex-row w-full space-y-[10px]">
           {layanan.map((item, i) => {
             return (
               <LayananCard
@@ -88,23 +88,8 @@ function Layanan() {
           Tersedia layanan dibawah ini untuk transformasi digital anda dan
           bisnis anda
         </H4>
-        <div className="flex space-x-[30px] mt-[50px] flex-col sm:flex-row">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-4 md:mt-[50px] mt-[20px]">
           {fokusLayanan
-            .filter((item) => parseInt(item.index) < 3)
-            .map((item, i) => {
-              return (
-                <FokusLayananCard
-                  key={"fl-" + i}
-                  title={item.title}
-                  description={item.description}
-                  index={item.index}
-                />
-              );
-            })}
-        </div>
-        <div className="flex space-x-[30px] mt-[50px] flex-col sm:flex-row">
-          {fokusLayanan
-            .filter((item) => parseInt(item.index) > 2)
             .map((item, i) => {
               return (
                 <FokusLayananCard

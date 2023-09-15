@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <main className={` bg-backgroundPrimary `}>
-        <div className="space-y-[80px] py-[80px] ">
+        <div className="md:space-y-[80px] space-y-[40px] py-[40px] md:py-[80px] ">
           <Hero />
           <Layanan />
           <Benefit />

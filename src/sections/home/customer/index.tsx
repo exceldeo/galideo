@@ -5,8 +5,8 @@ import { H2, H4 } from "@/components/Typography";
 
 function Customer() {
   return (
-    <section id="customer" className="w-full container">
-      <div className="flex flex-col items-center ">
+    <section id="customer" className="md:container container-mobile">
+      <div className="flex flex-col items-center text-center">
         <H2>
           Daftar
           <span className="text-primary"> Pelanggan Setia</span>

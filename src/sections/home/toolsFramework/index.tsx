@@ -77,8 +77,8 @@ const framework1 = [
 
 function ToolsFramework() {
   return (
-    <section id="tools" className="w-full">
-      <div className="flex flex-col space-y-[30px] items-center ">
+    <section id="tools" className="md:container container-mobile">
+      <div className="flex flex-col space-y-[30px] items-center  text-center">
         <div className="flex flex-col items-center ">
           <H2>
             Kami Gunakan
@@ -90,7 +90,7 @@ function ToolsFramework() {
           </H4>
         </div>
 
-        <ParallaxCardTools data={framework1} baseVelocity={3} />
+        <ParallaxCardTools data={framework1} baseVelocity={2} />
       </div>
     </section>
   );
