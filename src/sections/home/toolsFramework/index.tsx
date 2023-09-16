@@ -77,7 +77,7 @@ const framework1 = [
 
 function ToolsFramework() {
   return (
-    <section id="tools" className="md:container container-mobile">
+    <section id="tools" className="w-full">
       <div className="flex flex-col space-y-[30px] items-center  text-center">
         <div className="flex flex-col items-center ">
           <H2>
